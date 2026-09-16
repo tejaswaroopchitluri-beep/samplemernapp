@@ -1,0 +1,22 @@
+{
+  "name": "samplemernapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejaswaroopchitluri-beep/samplemernapp.git"
+  },
+  "author": "tejaswaroop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejaswaroopchitluri-beep/samplemernapp/issues"
+  },
+  "homepage": "https://github.com/tejaswaroopchitluri-beep/samplemernapp#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
