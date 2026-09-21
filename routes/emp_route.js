@@ -1,6 +1,6 @@
 let express=require('express');
 let router=express.Router();
-let bycrypt=require('bcrypt');
+let bcrypt=require('bcrypt');
 let {users}=require('../models/users');
 
 router.post("/register",async (req,res)=>{
@@ -14,7 +14,7 @@ router.post("/register",async (req,res)=>{
 router.post("/login",async (req,res)=>{
     let result=await users.findOne({email:req.body.email});
     if(result){
-        let matchpass=await bycrypt.compare(req.body.password,result.password);
+        let matchpass=await bcrypt.compare(req.body.password,result.password);
         if(matchpass){
             res.send("login successful");
         }else{
@@ -31,4 +31,13 @@ router.get("/viewtask",async (req,res)=>{
 router.put("/updatestatus",async (req,res)=>{
     res.send('update status page called');
 })
+
+router.patch("/updateprofile/:id",async (req,res)=>{
+    let data=req.body;
+    if(data.password){
+        data.password=await bcrypt.hash(data.password,10);
+    }
+    let result=await users.findByIdAndUpdate(req.params.id,data,{new:true});
+    res.send(result);
+});
 module.exports=router;
