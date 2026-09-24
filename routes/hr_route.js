@@ -1,12 +1,15 @@
 let express=require('express');
 let router=express.Router();
 let {users}=require('../models/users');
+let {tasks}=require('../models/tasks');
 router.get("/viewempolyees",async (req,res)=>{
    let result=await users.find();
    res.send(result);
 });
 router.post("/assign-task",async (req,res)=>{
-    let result=await users.findByIdAndUpdate(req.body.id,{$set:{task:req.body.task}});
+    let data=req.body;
+    let newtask=new tasks(data);
+    let result=await newtask.save();
     res.send(result);
 })
 router.delete("/deleteEmployee/:id",async (req,res)=>{

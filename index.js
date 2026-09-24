@@ -12,7 +12,7 @@ mongoose.connect("mongodb://localhost:27017/hrmanagement")
 
 app.use(express.json());
 app.use("/api/hr",hrroutes);
-app.use("/api/employee",emproutes);
+app.use("/api/emp",emproutes);
 
 //run the server
 app.listen(3000,()=>{

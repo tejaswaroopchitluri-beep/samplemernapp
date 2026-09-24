@@ -1,6 +1,6 @@
 let express=require('express');
 let router=express.Router();
-let bcrypt=require('bcrypt');
+let bycrypt=require('bcrypt');
 let {users}=require('../models/users');
 
 router.post("/register",async (req,res)=>{
