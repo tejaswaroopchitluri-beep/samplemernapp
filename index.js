@@ -7,7 +7,7 @@ mongoose.connect("mongodb://localhost:27017/hrmanagement")
     .then(()=>{
         console.log('connected to  mongodb database');
     }).catch((err)=>{
-        console.log('error connecting to database',err);
+        console.log('error  is connecting to database',err);
     });
 
 app.use(express.json());
