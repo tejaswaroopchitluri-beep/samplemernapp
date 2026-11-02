@@ -8,8 +8,8 @@ let userschema=mongoose.Schema({
     password:String,
     role:{
         type:String,
-        enum:['HR','EMPLOYEE'],
-    },
-});
+        enum:["HR","EMPLOYEE"]
+    }
+})
 let users=mongoose.model('users',userschema);
 module.exports={users}
