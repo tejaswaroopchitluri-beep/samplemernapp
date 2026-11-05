@@ -1218,7 +1218,7 @@ server.listen(3000,'127.0.0.1',()=>{
 });
 
 open browser type in url
- localhost:3000/
+ https://samplemernapp.onrender.com/
  then press enter
 
 
@@ -1241,11 +1241,11 @@ nodemon app.js
 
 
 
-localhost:3000/home
+https://samplemernapp.onrender.com/home
     => home page is working
-localhost:3000/aboutus
+https://samplemernapp.onrender.com/aboutus
    => about page is working
-localhost:3000/contactus
+https://samplemernapp.onrender.com/contactus
    => contact page is working
 
 
@@ -1304,9 +1304,9 @@ steps:
 1.create a server
 2.run the sever
 3.create get method with route(getStudents)
-     localhost:3000/getStudents =>GET
+     https://samplemernapp.onrender.com/getStudents =>GET
 4.create post method with route(addStudent)
-     localhost:3000/addStudents => POST
+     https://samplemernapp.onrender.com/addStudents => POST
 5.run the post method in postman tool
 6. collect data from postman to nodejs
 7. make connection with mongodb
@@ -1418,16 +1418,16 @@ roles
    employee(register,login,viewtask,updatestatus)
 
 hr_routes
-  localhost:3000/api/hr/viewemployees => GET
-  localhost:3000/api/hr/assign-task  =>post
-  localhost:3000/api/hr/viewtasks => GET
-  localhost:3000/api/hr/deleteEmp => Delete
+  https://samplemernapp.onrender.com/api/hr/viewemployees => GET
+  https://samplemernapp.onrender.com/api/hr/assign-task  =>post
+  https://samplemernapp.onrender.com/api/hr/viewtasks => GET
+  https://samplemernapp.onrender.com/api/hr/deleteEmp => Delete
 
 employee_routes 
-  localhost:3000/api/employee/register  =>POST
-  localhost:3000/api/employee/login => POST
-  localhost:3000/api/employee/viewtask => GET       
-  localhost:3000/api/employee/updatestatus => PUT
+  https://samplemernapp.onrender.com/api/employee/register  =>POST
+  https://samplemernapp.onrender.com/api/employee/login => POST
+  https://samplemernapp.onrender.com/api/employee/viewtask => GET       
+  https://samplemernapp.onrender.com/api/employee/updatestatus => PUT
 
 
 create employee routes and import in index.js file
@@ -1679,7 +1679,7 @@ cors
  
 localhost:27017 => mongodb
 
-localhost:3000 => expressjs
+https://samplemernapp.onrender.com => expressjs
 
 localhost:5173 => react
 
@@ -1691,7 +1691,7 @@ localhost:5173 => react
 
 
 
-url: localhost:3000/api/emp/register
+url: https://samplemernapp.onrender.com/api/emp/register
 method:POST
 json format
 datas : name,email,password,role(HR,EMPLOYEE)

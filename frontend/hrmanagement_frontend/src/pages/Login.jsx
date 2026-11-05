@@ -38,7 +38,7 @@ function Login() {
       }
 
       // HR / Employee login
-      const req = await fetch("http://localhost:3000/api/emp/login", {
+      const req = await fetch(" https://samplemernapp.onrender.com/api/emp/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

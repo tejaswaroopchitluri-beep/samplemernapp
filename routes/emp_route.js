@@ -3,7 +3,7 @@ let router=express.Router();
 let bcrypt=require('bcrypt');
 let {users}=require('../models/users');
 
-//localhost:3000/api/emp/register
+//https://samplemernapp.onrender.com/api/emp/register
 router.post("/register",async (req,res)=>{
     console.log(req.body);
     req.body.password=await bcrypt.hash(req.body.password,10);
